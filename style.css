@@ -32,6 +32,15 @@ header {
     position: relative; /* Necessário para o posicionamento do menu mobile */
 }
 
+#mainMenu a{
+    text-decoration: none;
+   
+}
+#mainMenu{
+     display: flex;
+    justify-content:space-around;
+}
+
 .logo-area {
     display: flex;
     align-items: center;
@@ -68,6 +77,10 @@ nav ul {
     padding: 0;
 }
 
+#menu a{
+
+}
+
 nav ul li {
     position: relative; /* Para os dropdowns */
 }
@@ -87,7 +100,7 @@ nav ul li a:hover {
 
 /* Dropdown Menu */
 .dropdown-content {
-    display: none; /* Esconde por padrão */
+    display: flex; /* Esconde por padrão */
     position: absolute;
     background-color: var(--color-header-green); /* Fundo do dropdown */
     min-width: 160px;
