@@ -2,7 +2,7 @@
 :root {
     /* Cores principais baseadas na imagem */
     --color-main-blue: #2d5a8d; /* Azul principal do background */
-    --color-header-green: #00a85a; /* Verde da barra de menu superior */
+    --color-header-green: #205745; /* Verde da barra de menu superior */
     --color-text-white: white; /* Cor do texto padrão */
     --color-facebook: #3b5998; /* Cor do botão Facebook */
     --color-instagram: #517fa4; /* Cor do botão Instagram */
@@ -24,9 +24,10 @@ body {
 /* --- Cabeçalho --- */
 header {
     display: flex;
-    justify-content: space-between; /* Alinha logo à esquerda e menu à direita */
+    justify-content: center; /* Alinha logo à esquerda e menu à direita */
     align-items: center;
     width: 100%;
+    height: auto;
     background-color: var(--color-header-green); /* Cor de fundo da barra superior */
     padding: 0 20px; /* Espaçamento lateral */
     position: relative; /* Necessário para o posicionamento do menu mobile */
@@ -48,8 +49,9 @@ header {
 }
 
 .logo-img {
+    width: 10%;
     /* Imagem da bandeira. Ajuste o caminho no HTML. */
-    height: 70px; 
+    height: auto; 
     object-fit: contain;
     /* Adicione background-image com a bandeira aqui se o logo for apenas texto */
 }
